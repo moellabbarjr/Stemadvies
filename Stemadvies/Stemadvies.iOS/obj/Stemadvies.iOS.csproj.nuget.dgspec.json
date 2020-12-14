@@ -1,46 +1,46 @@
 {
   "format": 1,
   "restore": {
-    "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.Android\\Stemadvies.Android.csproj": {}
+    "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies.iOS\\Stemadvies.iOS.csproj": {}
   },
   "projects": {
-    "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.Android\\Stemadvies.Android.csproj": {
+    "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies.iOS\\Stemadvies.iOS.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.Android\\Stemadvies.Android.csproj",
-        "projectName": "Stemadvies.Android",
-        "projectPath": "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.Android\\Stemadvies.Android.csproj",
-        "packagesPath": "C:\\Users\\leonh\\.nuget\\packages\\",
-        "outputPath": "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.Android\\obj\\",
+        "projectUniqueName": "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies.iOS\\Stemadvies.iOS.csproj",
+        "projectName": "Stemadvies.iOS",
+        "projectPath": "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies.iOS\\Stemadvies.iOS.csproj",
+        "packagesPath": "C:\\Users\\Roy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies.iOS\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\leonh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Roy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "monoandroid90"
+          "xamarinios10"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "monoandroid90": {
+          "xamarinios10": {
             "projectReferences": {
-              "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.csproj": {
-                "projectPath": "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.csproj"
+              "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies\\Stemadvies.csproj": {
+                "projectPath": "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies\\Stemadvies.csproj"
               }
             }
           }
         }
       },
       "frameworks": {
-        "monoandroid90": {
+        "xamarinios10": {
           "dependencies": {
             "Xamarin.Essentials": {
               "target": "Package",
@@ -52,22 +52,33 @@
             }
           }
         }
+      },
+      "runtimes": {
+        "win": {
+          "#import": []
+        },
+        "win-x64": {
+          "#import": []
+        },
+        "win-x86": {
+          "#import": []
+        }
       }
     },
-    "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.csproj": {
+    "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies\\Stemadvies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.csproj",
+        "projectUniqueName": "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies\\Stemadvies.csproj",
         "projectName": "Stemadvies",
-        "projectPath": "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.csproj",
-        "packagesPath": "C:\\Users\\leonh\\.nuget\\packages\\",
-        "outputPath": "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies\\obj\\",
+        "projectPath": "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies\\Stemadvies.csproj",
+        "packagesPath": "C:\\Users\\Roy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\leonh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Roy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],

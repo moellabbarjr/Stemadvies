@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.csproj": {}
+    "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies\\Stemadvies.csproj": {}
   },
   "projects": {
-    "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.csproj": {
+    "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies\\Stemadvies.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.csproj",
+        "projectUniqueName": "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies\\Stemadvies.csproj",
         "projectName": "Stemadvies",
-        "projectPath": "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies.csproj",
-        "packagesPath": "C:\\Users\\leonh\\.nuget\\packages\\",
-        "outputPath": "D:\\webroot\\Level 10\\L10-4\\Stemadvies\\Stemadvies\\Stemadvies\\Stemadvies\\obj\\",
+        "projectPath": "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies\\Stemadvies.csproj",
+        "packagesPath": "C:\\Users\\Roy\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Roy\\OneDrive - ROC Midden Nederland\\School\\Niveau 4\\Jaar 3\\Level 10\\app\\Stemadvies\\Stemadvies\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\leonh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Roy\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
