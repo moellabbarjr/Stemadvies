@@ -2,12 +2,12 @@
 # This .gitignore file was automatically created by Microsoft(R) Visual Studio.
 ################################################################################
 
-/Stemadvies/Stemadvies/bin/Debug/
-/Stemadvies/Stemadvies/obj/Debug/
-/Stemadvies/Stemadvies.Android/bin/Debug/
-/Stemadvies/Stemadvies.Android/obj/Debug/
-/Stemadvies/Stemadvies.iOS/bin/Debug/
-/Stemadvies/Stemadvies.iOS/obj/Debug/
+/Stemadvies/bin/Debug/
+/Stemadvies/obj/Debug/
+/Stemadvies.Android/bin/Debug/
+/Stemadvies.Android/obj/Debug/
+/Stemadvies.iOS/bin/Debug/
+/Stemadvies.iOS/obj/Debug/
 /.vs/
 
-/Stemadvies/Stemadvies/Stemadvies.iOS/obj/iPhoneSimulator/Debug
+/Stemadvies.iOS/obj/iPhoneSimulator/Debug
