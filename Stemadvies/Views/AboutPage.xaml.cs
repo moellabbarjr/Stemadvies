@@ -14,5 +14,10 @@ namespace Stemadvies.Views
         {
             InitializeComponent();
         }
+
+        private async void NavigateButton(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ResultsPage());
+        }
     }
 }
