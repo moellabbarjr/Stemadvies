@@ -17,7 +17,7 @@ namespace Stemadvies.Views
 
         private async void NavigateButton(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new ResultsPage());
+            await Navigation.PushModalAsync(new NavigationPage(new ResultsPage()));
         }
     }
 }

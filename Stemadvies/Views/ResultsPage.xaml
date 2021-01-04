@@ -8,9 +8,14 @@
              xmlns:vm="clr-namespace:Stemadvies.ViewModels"
              Title="{Binding Title}">
 
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Terug" Clicked="NavigateBack"/>
+    </ContentPage.ToolbarItems>
+
     <ContentPage.BindingContext>
         <vm:ResultsViewModel />
     </ContentPage.BindingContext>
+    
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Hier komen de resultaten te staan!"
