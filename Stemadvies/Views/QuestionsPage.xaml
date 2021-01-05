@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="Stemadvies.Views.QuestionsPage"
+             xmlns:vm="clr-namespace:Stemadvies.ViewModels"
+             Title="{Binding Title}">
+
+    <ContentPage.BindingContext>
+        <vm:QuestionsViewModel />
+    </ContentPage.BindingContext>
+
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Color x:Key="Primary">#2196F3</Color>
+            <Color x:Key="Accent">#96d1ff</Color>
+            <Color x:Key="LightTextColor">#999999</Color>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <StackLayout Padding="10,10">
+            <Image Source="logospartijen.png" HorizontalOptions="FillAndExpand" />
+            <Label Text="Vraag 1 van de 10"
+                   FontSize="Title"/>
+
+            <Label Text="Vraag"
+                   FontSize="Subtitle"/>
+
+            <RadioButton Text="Antwoord 1" GroupName="colors" IsChecked="True" />
+            <RadioButton Text="Antwoord 2" GroupName="colors" />
+            <RadioButton Text="Antwoord 3" GroupName="colors" />
+
+            <StackLayout Orientation="Horizontal">
+                <Button Margin="0,10,0,0" Text="Vorige vraag"
+                        Clicked="PreviousButton"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"/>
+                
+                <Button Margin="0,10,0,0" Text="Volgende vraag"
+                        Clicked="NextButton"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White"
+                        HorizontalOptions="FillAndExpand"/>
+            </StackLayout>
+
+            <Button Margin="0,10,0,0" Text="Naar resultaten"
+                        Clicked="NavigateButton"
+                        BackgroundColor="{StaticResource Primary}"
+                        TextColor="White"
+                        IsEnabled="True"/>
+            <!--Button gaat naar true als alles ingevult is-->
+        </StackLayout>
+    </ContentPage.Content>
+
+</ContentPage>

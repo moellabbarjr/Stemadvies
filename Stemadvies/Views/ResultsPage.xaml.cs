@@ -16,5 +16,10 @@ namespace Stemadvies.Views
         {
             InitializeComponent();
         }
+
+        private async void NavigateBack(object sender, EventArgs e)
+        {
+            await Navigation.PopModalAsync();
+        }
     }
 }

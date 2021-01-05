@@ -11,6 +11,8 @@ namespace Stemadvies
 
         public App()
         {
+            Device.SetFlags(new string[] { "RadioButton_Experimental" });
+
             InitializeComponent();
 
             DependencyService.Register<MockDataStore>();
