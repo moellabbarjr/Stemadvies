@@ -14,8 +14,9 @@
     
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welkom bij stemadvies!"
-                HorizontalOptions="CenterAndExpand"/>
+            <Image Source="stemadvieslogo.png" HorizontalOptions="FillAndExpand" />
+            <Label Text="Welkom bij stemadvies." HorizontalOptions="Center"/>
+            <Label Text="In deze app kan je een aantal vragen beantwoorden om een advies te krijgen op wie je kan stemmen." HorizontalOptions="Start" HorizontalTextAlignment="Center"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
