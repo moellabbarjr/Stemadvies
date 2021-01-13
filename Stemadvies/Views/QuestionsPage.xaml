@@ -23,15 +23,9 @@
     <ContentPage.Content>
         <StackLayout Padding="10,10">
             <Image Source="logospartijen.png" HorizontalOptions="FillAndExpand" />
-            <Label Text="Vraag 1 van de 10"
-                   FontSize="Title"/>
-
-            <Label Text="Vraag"
-                   FontSize="Subtitle"/>
-
-            <RadioButton Text="Antwoord 1" GroupName="colors" IsChecked="True" />
-            <RadioButton Text="Antwoord 2" GroupName="colors" />
-            <RadioButton Text="Antwoord 3" GroupName="colors" />
+            <Label x:Name="titleText" Text="Vraag 0" FontSize="Title"/>
+            <Label x:Name="questionText" Text="vraag" FontSize="Subtitle"/>
+            
 
             <StackLayout Orientation="Horizontal">
                 <Button Margin="0,10,0,0" Text="Vorige vraag"
