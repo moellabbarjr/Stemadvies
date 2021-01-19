@@ -10,7 +10,7 @@ namespace Stemadvies
 
         public string vraag { get; set; }
 
-        public int sectie_id { get; set; }
+        public string onderwerp { get; set; }
 
         public string created_at { get; set; }
 

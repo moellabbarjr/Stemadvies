@@ -26,7 +26,13 @@
                 <Image Source="logospartijen.png" HorizontalOptions="FillAndExpand" />
                 <Label x:Name="titleText" Text="Vraag 0" FontSize="Title"/>
                 <Label x:Name="questionText" Text="vraag" FontSize="Subtitle"/>
-                <StackLayout x:Name="answerButtons"/>
+                
+                <StackLayout x:Name="answerButtons">
+                    <RadioButton Text="Eens" ClassId="True" IsChecked="True"/>
+                    <RadioButton Text="Oneens" ClassId="False"/>
+                    <RadioButton Text="Weet ik niet" ClassId="Null"/>
+
+                </StackLayout>
 
                 <StackLayout Orientation="Horizontal">
                     <Button x:Name="previousButton"
@@ -46,11 +52,13 @@
                             HorizontalOptions="FillAndExpand"/>
                 </StackLayout>
 
-                <Button Margin="0,10,0,0" Text="Naar resultaten"
+                <Button x:Name="resultButton"
+                            Margin="0,10,0,0"
+                            Text="Naar resultaten"
                             Clicked="NavigateButton"
                             BackgroundColor="{StaticResource Primary}"
                             TextColor="White"
-                            IsEnabled="True"/>
+                            IsEnabled="False"/>
                 <!--Button gaat naar true als alles ingevult is-->
             </StackLayout>
         </ScrollView>

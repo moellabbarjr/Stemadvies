@@ -15,6 +15,7 @@ namespace Stemadvies.Views
     public partial class QuestionsPage : ContentPage
     {
         int questionIndex = 0;
+        List<UserAnswer> userAnswers = new List<UserAnswer>();
 
         public QuestionsPage()
         {
@@ -36,32 +37,82 @@ namespace Stemadvies.Views
             // Enable en disable buttons op basis van de index
             previousButton.IsEnabled = (questionIndex <= 0) ? false : true;
             nextButton.IsEnabled = (questionIndex >= maxIndex) ? false : true;
+            if (questionIndex >= maxIndex)
+            {
+                nextButton.IsEnabled = false;
+                resultButton.IsEnabled = true;
+            }
 
             titleText.Text = $"Vraag {questionIndex + 1} van de {question.Count}";
             questionText.Text = question[questionIndex].vraag;
 
-            answerButtons.Children.Clear();
-            foreach (var answer in question[questionIndex].antwoorden)
+            foreach(RadioButton radioButton in answerButtons.Children)
             {
-                answerButtons.Children.Add(new RadioButton { Text = answer.antwoord, GroupName = answer.vraag_id.ToString() });
+                radioButton.GroupName = question[questionIndex].vraag_id.ToString();
             }
+
+            SetRadioButtons(question[questionIndex].vraag_id);
         }
 
         private async void NavigateButton(object sender, EventArgs e)
         {
+            UpdateScore();
             await Navigation.PushModalAsync(new NavigationPage(new ResultsPage()));
         }
 
         private void PreviousButton(object sender, EventArgs e)
         {
+            UpdateScore();
             questionIndex--;
             GetQuestion();
         }
 
         private void NextButton(object sender, EventArgs e)
         {
+            UpdateScore();
             questionIndex++;
             GetQuestion();
+        }
+
+        private void UpdateScore()
+        {
+            int? questionId = null;
+            string answer = "";
+            foreach(RadioButton radioButton in answerButtons.Children)
+            {
+                if (radioButton.IsChecked)
+                {
+                    questionId = int.Parse(radioButton.GroupName);
+                    answer = radioButton.ClassId;
+                }
+            }
+
+            if (userAnswers.Exists(x => x.question_id == questionId))
+            {
+                userAnswers.Find(x => x.question_id == questionId).answer = answer;
+            } else
+            {
+                userAnswers.Add(new UserAnswer() { question_id = questionId, answer = answer });
+            }
+        }
+
+        private void SetRadioButtons(int questionId)
+        {
+            if (userAnswers.Exists(x => x.question_id == questionId))
+            {
+                foreach(RadioButton radioButton in answerButtons.Children)
+                {
+                    if (userAnswers.Find(x => x.question_id == questionId).answer == radioButton.ClassId)
+                    {
+                        radioButton.IsChecked = true;
+                    }
+                }
+            } 
+            else
+            {
+                RadioButton first = (RadioButton)answerButtons.Children.FirstOrDefault();
+                first.IsChecked = true;
+            }
         }
     }
 }

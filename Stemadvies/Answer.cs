@@ -8,10 +8,10 @@ namespace Stemadvies
     {
         public int antwoord_id { get; set; }
 
-        public string antwoord { get; set; }
-
         public int vraag_id { get; set; }
 
-        public int score { get; set; }
+        public int partij_id { get; set; }
+
+        public int eens { get; set; }
     }
 }
