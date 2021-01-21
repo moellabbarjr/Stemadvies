@@ -26,7 +26,7 @@ function GetAnswers($id) {
     $answers = [];
 
     $conn = (new Database)->Connect();
-    $sql = "SELECT * FROM `antwoord` WHERE `vraag_id` = $id";
+    $sql = "SELECT `a`.`antwoord_id`, `a`.`vraag_id`, `a`.`partij_id`, `p`.`partij_naam`, `p`.`partij_logo`, `a`.`eens` FROM `antwoord` a LEFT JOIN `partij` p ON `a`.`partij_id` = `p`.`partij_id` WHERE `a`.`vraag_id` = $id";
 
     $stmt= $conn->prepare($sql);
     $stmt->execute();

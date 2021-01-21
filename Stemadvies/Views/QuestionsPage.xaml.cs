@@ -16,6 +16,7 @@ namespace Stemadvies.Views
     {
         int questionIndex = 0;
         List<UserAnswer> userAnswers = new List<UserAnswer>();
+        List<Answer> currentAnswer = new List<Answer>();
 
         public QuestionsPage()
         {
@@ -51,13 +52,15 @@ namespace Stemadvies.Views
                 radioButton.GroupName = question[questionIndex].vraag_id.ToString();
             }
 
+            currentAnswer = question[questionIndex].antwoorden;
+
             SetRadioButtons(question[questionIndex].vraag_id);
         }
 
         private async void NavigateButton(object sender, EventArgs e)
         {
             UpdateScore();
-            await Navigation.PushModalAsync(new NavigationPage(new ResultsPage()));
+            await Navigation.PushModalAsync(new NavigationPage(new ResultsPage(userAnswers)));
         }
 
         private void PreviousButton(object sender, EventArgs e)
@@ -92,7 +95,7 @@ namespace Stemadvies.Views
                 userAnswers.Find(x => x.question_id == questionId).answer = answer;
             } else
             {
-                userAnswers.Add(new UserAnswer() { question_id = questionId, answer = answer });
+                userAnswers.Add(new UserAnswer() { question_id = questionId, answer = answer , parties = currentAnswer});
             }
         }
 
