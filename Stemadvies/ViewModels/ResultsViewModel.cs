@@ -8,7 +8,7 @@ namespace Stemadvies.ViewModels
     {
         public ResultsViewModel()
         {
-            Title = "Results";
+            Title = "Resultaten";
         }
     }
 }
